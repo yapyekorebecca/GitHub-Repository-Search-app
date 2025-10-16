@@ -65,7 +65,7 @@ This single command will:
 ## How to Use
 **Enter Search Query** - Type keywords like "react", "machine learning", or "web framework"
 4. **Apply Filters** :
-   - Choose a programming language
+   - Choose a programming language.
    - Set minimum stars threshold
    - Set minimum forks threshold
    - Select a specific license
