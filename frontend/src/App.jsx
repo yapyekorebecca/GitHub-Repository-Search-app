@@ -45,7 +45,8 @@ export default function App() {
           stars_gte: starsGte || "",
           license: license || ""
         });
-        const res = await fetch(`http://localhost:5000/api/search?${params.toString()}`, { signal: controller.signal });
+        const API_BASE = import.meta.env.VITE_API_URL || "";
+        const res = await fetch(`${API_BASE}/api/search?${params.toString()}`, { signal: controller.signal });
         if (!res.ok) {
           const body = await res.json().catch(() => ({}));
           throw new Error(body.error || "Failed to fetch");

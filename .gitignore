@@ -1,4 +1,12 @@
 node_modules
 dist
-.env
 .DS_Store
+
+# Environment files — keep .env.example and .env.development, ignore the rest
+.env
+.env.local
+.env.*.local
+
+# Allow these to be committed
+!.env.example
+!.env.development
